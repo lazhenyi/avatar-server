@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Server Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .stats-container {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-item {
+            margin-bottom: 15px;
+        }
+        .stat-label {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+        .stat-value {
+            font-size: 24px;
+            color: #3498db;
+        }
+        .date {
+            color: #95a5a6;
+            font-style: italic;
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Avatar Server Statistics</h1>
+<div class="stats-container">
+    <div class="stat-item">
+        <div class="stat-label">Total Images</div>
+        <div class="stat-value">{{total_images}}</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-label">New Images Today</div>
+        <div class="stat-value">{{today_new_images}}</div>
+    </div>
+</div>
+<div class="date">Current Date: {{current_date}}</div>
+</body>
+</html>
